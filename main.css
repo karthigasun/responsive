@@ -1,61 +1,37 @@
 *{
     font-family: "Poppins", sans-serif;
 }
-/* HEADER-CONTAINER  */
-.container{
-    width: 100%;
-    height: auto;
+.navbar{
+    background: linear-gradient(180deg, #213b52 0%, rgb(33, 60, 84) 35%, rgb(32, 69, 100) 100%);
 }
-.header-container{
-    margin: auto;
-    width:90%;
+
+.navbar-nav li{
+    margin-left: 25px;
 }
-.top-head{
-    display: flex;
-    justify-content: space-between;
-    padding:20px 7px;
+.navbar-nav li a{
+    color:#adc7de;
 }
-.top-head h1 a{
-    font-size: 24px;
-    text-decoration: none;
+.navbar-nav li a:hover{
     color: #fff;
-    padding:15px 7px;
+    transition: 0.3s;
 }
-.top-head h1 a span{
-    color: #fdc134;
-}
-.navigation ul{
-    display: none;
-}
-.navigation .fa-bars{
-    color: #fdc134;
-    font-size: 24px;
-}
-.top-foot{
-    display: flex;
-    flex-direction: column-reverse;
-}
-.top-image img{
-    max-width: 100%;
-}
-.top-text{
-    padding: 30px 0px;
-    text-align-last: center!;
-}
-.top-text h1{
-    font-size:28px;
-    color: #d2e0ed;
+.container h1 a{
+    color: #fff;
     font-weight: 700;
-    padding:12px 8px;
 }
-.top-text h2{
-    font-family: "Raleway", sans-serif;
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
-    font-weight:500;
-    padding: 0px 8px;
-    color: #fff;
+.container h1 a span{
+    color: #fdc134;
+    padding: 0px 3px;
+}
+.collapse button{
+    border-radius: 50px;
+    border: 2px solid #fdc134;
+    color:#fff;
+    margin-left: 20px;
+}
+.collapse button:hover{
+    background-color: #fdc134!important;
+    border: 2px solid #fdc134!important;
 }
 .top-text button{
     color: #213b52;
@@ -68,141 +44,10 @@
     font-size: 20px;
 }
 .top-text button:hover{
-    background: transparent;
+    background:transparent;
     cursor:pointer;
     color:#fff;
 }
-/* IMAGE-CONTAINER  */
-.image-container{
-    margin: auto;
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 20px 0px;
-}
-.client-logo{
-    width:50%;
-    padding: 30px 20px;
-}
-.client-logo img{
-    max-width: 100%;
-}
-@media(min-width:768px){
-    .client-logo{
-        width:33.3333%;
-        padding: 20px 60px;
-    }
-    .top-text{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start!;
-    }
-    
-}
-@media(min-width:992px){
-    .navigation .fa-bars{
-        color: #fdc134;
-        font-size: 24px;
-        display: none;
-    }
-    .logo{
-        margin-top: 10px;
-    }
-    .navigation ul{
-        display: block;
-        list-style: none;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .navigation ul li a{
-        text-decoration: none;
-        font-size: 18px;
-        margin-right: 20px;
-        color:#adc7de;
-        display: inline-block;
-    }
-    .navigation ul li a:hover{
-        color: #fff;
-        transition: 0.3s;
-    }
-    .navigation ul li .get{
-        padding: 10px 20px;
-        border:#fdc134 2px solid ;
-        border-radius: 50px;
-    }
-    .navigation ul li .get:hover{
-        background-color: #fdc134;
-    }
-    .navigation ul li .fa-chevron-down{
-        display: inline-block;
-        color:#adc7de;
-    }
-    .top-foot{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-    .top-text{
-        align-items: flex-start;
-    }
-    .top-text h1{
-        font-size:48px;
-        color: #d2e0ed;
-        font-weight: 700;
-        padding:12px 8px;
-        line-height: 56px;
-    }
-    .top-text h2{
-        font-family: "Raleway", sans-serif;
-        font-size: 22px;
-        line-height: 24px;
-        margin-bottom: 30px;
-        font-weight:500;
-        padding: 0px 8px;
-        color: #fff;
-    }
-    .client-logo{
-        width:16.6666666667%;
-        padding: 20px 25px;
-    }
-}
-@media(min-width:1200px){
-    .navigation ul li a{
-        text-decoration: none;
-        font-size: 18px;
-        margin-right: 20px;
-        color:#adc7de;
-        display: inline-block;
-        padding: 0px 10px;
-    }
-}
-
-/* ABOUT-CONTAINER  */
-.about-container{
-    width: 90%;
-    margin: auto;
-    padding: 50px 0px;
-}
-.about-left img{
-    max-width: 100%;
-}
-.about-right-content{
-    padding: 20px 0px;
-}
-.about-right-content h2{
-    font-weight: 700;
-    font-size: 34px;
-    color: #213b52;
-    padding: 10px 0px;
-}
-.about-right-content p{
-    font-size: 20px;
-    line-height: 30px;
-}
-
-
 
 
 
