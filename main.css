@@ -33,6 +33,20 @@
     background-color: #fdc134!important;
     border: 2px solid #fdc134!important;
 }
+.top-text h1{
+    font-weight: 700;
+}
+.top-text h2{
+    font-family: "Raleway", sans-serif;
+}
+.top-text{
+    text-align-last: center;
+}
+@media(min-width:992px){
+    .top-text{
+        text-align-last: auto;
+    }
+}
 .top-text button{
     color: #213b52;
     border-radius: 50px;
@@ -47,7 +61,7 @@
     background:transparent;
     cursor:pointer;
     color:#fff;
-    border: 2px solid #fdc134;
+    border: 2px solid #fdc134!important;
 }
 i{
     color: #fdc134;
@@ -350,10 +364,12 @@ i{
     padding: 4px 20px 5px 20px;
     font-size: 12px;
 }
-.pricing .featured {
-    z-index: 10;
-    border: 1px solid #fdc134;
-    margin: 0px -5px -30px -5px
+@media(min-width:992px){
+    .pricing .featured {
+        z-index: 10;
+        border: 1px solid #fdc134;
+        margin: 0px -5px -30px -5px
+    }
 }
 .faq .faq-item{
     margin: 20px 0;
@@ -506,9 +522,16 @@ i{
     text-align: center;
 }
 #footer .credits {
-    /* float: right; */
     text-align: center;
     font-size: 13px;
+}
+@media(min-width:768px){
+    #footer .credits{
+        float: right;
+    }
+    #footer .copyright{
+        float: left;
+    }
 }
 #footer .footer-top .footer-newsletter form {
     background: #fff;
